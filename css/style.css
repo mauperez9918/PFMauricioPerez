@@ -23,32 +23,42 @@ header {
 
 nav {
     width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-nav a {
+.nav-link {
     text-decoration: none;
     color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.navbar-nav .nav-link.active{
+    color: orange;
+}
+
+.navbar-nav .nav-link.active:hover{
+    color:black;
 }
 
 .logo {
-    width: 140px;
+    width: 110px;
 }
 
 nav ul {
-    display: flex;
-    border-style: solid;
-    border-radius: 8px;
-    border-color: white;
-    font-weight: 600;
     font-size: 18px;
-    padding: 7px 7px;
 }
 
 nav ul li {
-    padding: 0px 30px;
+    margin: 10px;
+}
+
+.nav-item :hover{
+    background-color: orange;
+    border-radius: 8px;
+    color: black;
+}
+
+.nav-item {
+    color: white;
 }
 
 /* Main */
