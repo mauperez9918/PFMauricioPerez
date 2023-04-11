@@ -194,9 +194,10 @@ h1 {
 
 /* Contacto */
 
-.contacto{
+.contacto {
     margin-top: 70px;
 }
+
 .titulo-contacto {
     margin: 30px 0px;
     font-size: 30px;
@@ -299,7 +300,7 @@ button:hover {
 
 .producto-carrito h3 {
     margin: 30px;
-    font-size: 20px ;
+    font-size: 20px;
 }
 
 .producto-carrito img {
@@ -467,10 +468,10 @@ footer {
         margin: 12px 0px;
         height: 75px;
         text-align: center;
-    } 
+    }
 
     .producto-carrito p {
-margin: 0px;
+        margin: 0px;
     }
 
     .resumen-compra {
