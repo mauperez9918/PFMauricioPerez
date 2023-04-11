@@ -1,5 +1,6 @@
 /* General */
 * {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -31,12 +32,12 @@ nav {
     border-radius: 8px;
 }
 
-.navbar-nav .nav-link.active{
+.navbar-nav .nav-link.active {
     color: orange;
 }
 
-.navbar-nav .nav-link.active:hover{
-    color:black;
+.navbar-nav .nav-link.active:hover {
+    color: black;
 }
 
 .logo {
@@ -51,7 +52,7 @@ nav ul li {
     margin: 10px;
 }
 
-.nav-item :hover{
+.nav-item :hover {
     background-color: orange;
     border-radius: 8px;
     color: black;
@@ -59,6 +60,10 @@ nav ul li {
 
 .nav-item {
     color: white;
+}
+
+.navbar-toggler {
+    background-color: white;
 }
 
 /* Main */
@@ -69,14 +74,18 @@ main {
 
 .contenido-principal {
     width: 80%;
-    height: auto;
+    height: 100%;
     background-color: white;
+    padding-bottom: 20px;
+    min-height: 80vh;
 }
 
 h1 {
     font-size: 30px;
     width: 100%;
     text-align: center;
+    margin-top: 10px;
+    height: 45px;
 }
 
 /* Index */
@@ -87,13 +96,12 @@ h1 {
 }
 
 .categorias {
-    padding-left: 10px;
-    margin: 20px 0px;
-    width: 13%;
+    margin-top: 20px;
     color: black;
 }
 
 .categorias h2 {
+    height: 40px;
     font-size: 25px;
     margin-bottom: 11px;
 }
@@ -105,6 +113,10 @@ h1 {
     text-decoration: none;
 }
 
+.categorias ul {
+    padding: 0px;
+}
+
 .categorias li {
     padding: 3px 3px;
     border-style: solid;
@@ -114,25 +126,26 @@ h1 {
 }
 
 .categorias li:hover {
-    background-color: rgb(255, 145, 0);
+    background-color: rgb(245, 142, 8);
+    cursor: pointer;
 }
 
 .novedades {
-    margin-left: 33px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
     width: 82%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0px;
 }
 
 .tarjeta {
     color: rgb(0, 0, 0);
-    font-weight: 400;
-    width: 200px;
-    margin-top: 10px;
-    margin-right: 20px;
+    width: 220px;
+}
+
+.tarjeta h3 {
+    font-size: 15px;
 }
 
 .tarjeta img {
@@ -145,8 +158,11 @@ h1 {
 /* Nosotros */
 
 .personas {
+    width: 50%;
     height: auto;
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nosotros {
@@ -157,6 +173,11 @@ h1 {
 }
 
 /* Cambios y Garantias */
+
+.cambios-banner {
+    width: 100%;
+    height: auto;
+}
 
 .cambios-y-garantias {
     display: flex;
@@ -173,10 +194,13 @@ h1 {
 
 /* Contacto */
 
+.contacto{
+    margin-top: 70px;
+}
 .titulo-contacto {
     margin: 30px 0px;
-    height: auto;
     font-size: 30px;
+    height: 40px;
     text-align: center;
     width: 100%;
 }
@@ -185,9 +209,11 @@ h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    max-width: 100%;
 }
 
 .formularios ul {
+    padding: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,6 +236,7 @@ input {
     padding: 5px 5px;
     border-style: solid;
     border-radius: 5px;
+    border width: 5px;
 }
 
 textarea {
@@ -222,10 +249,16 @@ textarea {
 
 button {
     padding: 10px 30px;
-    border-style: solid;
     border-radius: 6px;
     font-size: 25px;
     cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+button:hover {
+    background-color: orange;
+    color: black;
 }
 
 /* Carrito */
@@ -261,15 +294,12 @@ button {
     margin: 20px 20px;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
 }
 
-.producto-carrito div {
-    display: flex;
-    max-width: 80%;
-}
-
-.producto-carrito div h3 {
+.producto-carrito h3 {
     margin: 30px;
+    font-size: 20px ;
 }
 
 .producto-carrito img {
@@ -310,10 +340,9 @@ button {
 
 /* Footer*/
 footer {
-    bottom: 0;
-    left: 0;
+
     width: 100%;
-    height: 140px;
+    height: 130px;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -327,9 +356,158 @@ footer {
     align-items: center;
 }
 
+.logo-footer {
+    width: 110px;
+}
+
+.info-footer p {
+    margin: 0px;
+}
+
 .redes a {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
+    padding: 0px 10px;
     color: white;
+}
+
+.redes a:hover {
+    color: orange;
+}
+
+/* Media Queries */
+
+@media (max-width:576px) {
+
+    /* General */
+
+    nav {
+        width: 100%;
+    }
+
+    /* Main Mobile */
+
+    h1 {
+        margin-top: 10px;
+    }
+
+    /* Index */
+
+    .contenido-principal {
+        width: 100%;
+    }
+
+    .novedades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Nosotros */
+
+    .personas {
+        width: 80%
+    }
+
+    .nosotros {
+        text-align: center;
+    }
+
+    /* Cambios y Garantias */
+
+    .cambios-y-garantias {
+        text-align: center;
+    }
+
+    /* Contacto */
+
+    .formularios form ul {
+        padding: 0;
+    }
+
+    .nombre-y-apellido {
+        flex-direction: column;
+    }
+
+    .telefono-y-mail {
+        flex-direction: column;
+    }
+
+    textarea {
+        display: block;
+        max-width: 70%;
+        height: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Carrito */
+
+    .titulo-carrito {
+        margin: 15px 0px;
+    }
+
+    .compra {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productos {
+        max-width: 85%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .producto-carrito {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .producto-carrito h3 {
+        font-size: 20px;
+        margin: 12px 0px;
+        height: 75px;
+        text-align: center;
+    } 
+
+    .producto-carrito p {
+margin: 0px;
+    }
+
+    .resumen-compra {
+        height: auto;
+    }
+
+    .resumen-compra h2 {
+        margin: 0px;
+        height: 30px;
+    }
+
+    /* Footer Mobile */
+
+    .logo-footer {
+        width: 90px;
+        margin: 10px 0px;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0px;
+        justify-content: space-evenly;
+    }
+
+    .info-footer {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .redes {
+        font-size: 12px;
+    }
 }
