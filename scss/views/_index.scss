@@ -1,0 +1,65 @@
+
+.banner {
+    width: 100%;
+    max-width: 100%;
+}
+
+.categorias {
+    margin-top: 20px;
+    color: black;
+}
+
+.categorias h2 {
+    height: 40px;
+    font-size: 25px;
+    margin-bottom: 11px;
+}
+
+.categorias ul {
+    padding: 0px;
+}
+
+.categorias li {
+    padding: 3px 3px;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    margin-bottom: 5px;
+}
+
+.categorias a {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+.categorias li:hover {
+    background-color: rgb(245, 142, 8);
+    cursor: pointer;
+}
+
+.novedades {
+    margin-top: 10px;
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.tarjeta {
+    color: rgb(0, 0, 0);
+    width: 220px;
+}
+
+.tarjeta h3 {
+    font-size: 15px;
+}
+
+.tarjeta img {
+    max-width: 100%;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+}

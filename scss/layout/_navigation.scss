@@ -1,0 +1,40 @@
+
+nav {
+    width: 80%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.navbar-nav .nav-link.active {
+    color: orange;
+}
+
+.navbar-nav .nav-link.active:hover {
+    color: black;
+}
+
+nav ul {
+    font-size: 18px;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+.nav-item :hover {
+    background-color: orange;
+    border-radius: 8px;
+    color: black;
+}
+
+.nav-item {
+    color: white;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
