@@ -1,11 +1,13 @@
-
 header {
     background-color: black;
     display: flex;
     justify-content: center;
-}
 
-.logo {
-    width: 110px;
+    nav {
+        .container-fluid {
+            .logo {
+                width: 350px;
+            }
+        }
+    }
 }
-

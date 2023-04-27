@@ -1,4 +1,3 @@
-
 button {
     padding: 10px 30px;
     border-radius: 6px;
@@ -6,9 +5,9 @@ button {
     cursor: pointer;
     color: white;
     background-color: black;
-}
 
-button:hover {
-    background-color: orange;
-    color: black;
+    &:hover {
+        background-color: orange;
+        color: black;
+    }
 }

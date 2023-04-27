@@ -1,5 +1,4 @@
-
-.personas {
+.img-personas {
     width: 50%;
     height: auto;
     display: block;
@@ -7,9 +6,32 @@
     margin-right: auto;
 }
 
-.nosotros {
-    padding: 0px 20px;
+.p-nosotros {
+    margin: 0px 20px;
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 35px;
+}
+
+// Media Querie //
+
+@media (max-width:576px) {
+
+    .contenido-principal {
+        .nosotros-titulo {
+            h1 {
+                height: 30px;
+            }
+        }
+
+        .img-personas {
+            width: 80%
+        }
+
+        .p-nosotros {
+            text-align: center;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
 }

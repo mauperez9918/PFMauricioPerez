@@ -1,6 +1,6 @@
-
 body {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -9,4 +9,27 @@ h1 {
     text-align: center;
     margin-top: 10px;
     height: 45px;
+}
+
+h2 {
+    height: 77px;
+}
+
+h3 {
+    margin-top: 10px;
+    height: 54px;
+}
+
+h4 {
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+// Media Queries //
+
+@media (max-width:576px) {
+    h1 {
+        height: 73px;
+        margin-bottom: 15px;
+    }
 }
