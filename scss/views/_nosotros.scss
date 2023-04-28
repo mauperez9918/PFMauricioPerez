@@ -13,9 +13,7 @@
     margin-bottom: 35px;
 }
 
-// Media Querie //
-
-@media (max-width:576px) {
+@include mobile {
 
     .contenido-principal {
         .nosotros-titulo {
@@ -29,7 +27,7 @@
         }
 
         .p-nosotros {
-            text-align: center;
+            text-align: left;
             margin-left: 5px;
             margin-right: 5px;
         }

@@ -71,13 +71,12 @@
 
         img {
             max-width: 100%;
+            background-color: white;
         }
     }
 }
 
-// Media queries //
-
-@media (max-width:576px) {
+@include mobile {
 
     .contenido-principal {
         width: 100%;

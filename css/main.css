@@ -171,6 +171,7 @@ h4 {
 }
 .novedades .tarjeta img {
   max-width: 100%;
+  background-color: white;
 }
 
 @media (max-width: 576px) {
@@ -206,7 +207,7 @@ h4 {
     width: 80%;
   }
   .contenido-principal .p-nosotros {
-    text-align: center;
+    text-align: left;
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -228,14 +229,16 @@ h4 {
 
 @media (max-width: 576px) {
   .cambios-y-garantias {
-    text-align: center;
+    text-align: left;
   }
   .cambios-y-garantias p {
     margin: 0px 5px;
   }
 }
 .contacto {
-  margin-top: 70px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
 }
 .contacto .titulo-contacto {
   font-size: 30px;
@@ -269,7 +272,7 @@ h4 {
   padding: 5px 5px;
   border-style: solid;
   border-radius: 5px;
-  border-width: 5px;
+  border-width: 2px;
 }
 .contacto .formularios ul li textarea {
   width: 435px;
@@ -281,7 +284,12 @@ h4 {
 
 @media (max-width: 576px) {
   .contacto {
-    margin-top: 20px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .contacto iframe {
+    margin-bottom: 20px;
   }
   .contacto .formularios ul {
     padding: 0;
@@ -312,9 +320,9 @@ h4 {
   justify-content: space-evenly;
 }
 .compra .productos {
-  border-style: solid;
+  color: black;
   border-radius: 7px;
-  border-width: 4px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
   max-width: 65%;
   margin-bottom: 50px;
   height: 500px;
@@ -322,8 +330,11 @@ h4 {
 .compra .productos .producto-carrito {
   display: flex;
   padding: 30px 30px;
-  border-style: solid;
-  border-radius: 7px;
+  color: black;
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 8px;
+  border-color: rgba(0, 0, 0, 0.2);
   padding: 20px 20px;
   margin: 20px 20px;
   justify-content: space-between;
@@ -339,9 +350,8 @@ h4 {
 }
 .compra .resumen-compra {
   height: 500px;
-  border-style: solid;
-  border-radius: 7px;
-  border-width: 4px;
+  color: black;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
   padding: 15px 15px;
   display: flex;
@@ -364,7 +374,6 @@ h4 {
 @media (max-width: 576px) {
   .titulo-carrito {
     margin: 15px 0px;
-    height: 65px;
   }
   .compra {
     flex-direction: column;

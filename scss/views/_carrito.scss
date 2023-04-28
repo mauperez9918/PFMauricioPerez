@@ -11,9 +11,9 @@
     justify-content: space-evenly;
 
     .productos {
-        border-style: solid;
+        color: black;
         border-radius: 7px;
-        border-width: 4px;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
         max-width: 65%;
         margin-bottom: 50px;
         height: 500px;
@@ -21,8 +21,11 @@
         .producto-carrito {
             display: flex;
             padding: 30px 30px;
-            border-style: solid;
-            border-radius: 7px;
+            color: black;
+            border-style: outset;
+            border-width: 1px;
+            border-radius: 8px;
+            border-color: rgba(0, 0, 0, 0.2);
             padding: 20px 20px;
             margin: 20px 20px;
             justify-content: space-between;
@@ -42,9 +45,8 @@
 
     .resumen-compra {
         height: 500px;
-        border-style: solid;
-        border-radius: 7px;
-        border-width: 4px;
+        color: black;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
         margin-bottom: 30px;
         padding: 15px 15px;
         display: flex;
@@ -68,13 +70,10 @@
     }
 }
 
-// Media queries //
-
-@media (max-width:576px) {
+@include mobile {
 
     .titulo-carrito {
         margin: 15px 0px;
-        height: 65px;
     }
 
     .compra {
