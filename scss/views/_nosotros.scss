@@ -16,20 +16,20 @@
 @include mobile {
 
     .contenido-principal {
+
         .nosotros-titulo {
             h1 {
-                height: 30px;
+                height: 36px;
             }
-        }
-
-        .img-personas {
-            width: 80%
         }
 
         .p-nosotros {
             text-align: left;
-            margin-left: 5px;
-            margin-right: 5px;
+            margin: 0px 12px;
+        }
+
+        .img-personas {
+            width: 80%
         }
     }
 }

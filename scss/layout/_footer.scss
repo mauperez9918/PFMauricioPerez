@@ -38,12 +38,7 @@ footer {
 
 // Media queries //
 
-@media (max-width:576px) {
-    .logo-footer {
-        width: 90px;
-        margin: 10px 0px;
-    }
-
+@include mobile {
     footer {
         height: auto;
 
@@ -63,11 +58,26 @@ footer {
                     font-size: 18px;
                 }
             }
+
+            .logo-footer {
+                width: 90px;
+                margin: 10px 0px;
+            }
         }
+    }
+}
 
-        .redes {
-            font-size: 12px;
+@include tablet {
+    footer {
+        .footer {
 
+            .info-footer {
+                font-size: 12px;
+            }
+
+            .logo-footer {
+                width: 80px;
+            }
         }
     }
 }

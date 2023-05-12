@@ -32,13 +32,15 @@
             align-items: center;
             max-width: 100%;
 
-            img {
-                width: 150px;
-            }
-
             h3 {
                 margin: 30px;
-                font-size: 20px;
+                font-size: 18px;
+                max-width: 230px;
+                height: auto;
+            }
+
+            img {
+                width: 150px;
             }
         }
     }
@@ -108,7 +110,44 @@
 
             h2 {
                 margin: 0px;
-                height: 30px;
+                height: 34px;
+            }
+        }
+    }
+}
+
+@include between-tablet-desktop {
+    .compra {
+        flex-direction: column;
+        align-items: center;
+
+        .productos {
+            min-width: 90%;
+            height: auto;
+
+            .producto-carrito {
+
+                h3 {
+                    font-size: 18px;
+                    max-width: 195px;
+                    height: 65px;
+                    margin: 6px 6px;
+                }
+
+                p {
+                    font-size: 16px;
+                    min-width: 102px;
+                }
+            }
+        }
+
+        .resumen-compra {
+            width: 60%;
+
+            .total {
+                p {
+                    font-size: 20px;
+                }
             }
         }
     }
